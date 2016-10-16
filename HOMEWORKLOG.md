@@ -130,3 +130,20 @@ Did okay on "about arrays" section. I won't lie, it is weird to only be looking 
   * delete: Can delete a property(key), just by putting delete [objectName.propertyName]
 
 ## About Inheritance ##
+#### Thinking About Inheritance ####
+* It should be able to call a method on the derived object.
+  * '.call': I do not quite fully understand this method. I know that it calls for a constructor and then in the parameter uses this. I do not understand why it uses this in the parameters. Maybe it is because the new parameter being created should be included alongside the other parameters...? I also do not understand the ordering related to the expect.
+
+* It should be able to call a method on the base object.
+  * It is hard to follow these functions. What does:
+  ``` js
+    Muppet.call(this, age, hobby);
+    ```
+    do in the SwedishChef function? Does it replicate the parameters of Muppet?
+
+* It should set constructor parameters on the base object.
+  * This part makes me realize that '.call' plus the parameters of the original constructor (and this to add new parameters), will add the parameters of the constructor to the new function.
+
+#### Thinking About Crockford's Inheritance Improvement ####
+* It should be able to call a method on the derived object.
+  * ".beget" is not documented. Although the comment says, "no longer need to call the Muppet (base type) constructor", I still do not understand what is going on. I am assuming that beget means that Gonzo no longer has to reference Muppet, including functions.
