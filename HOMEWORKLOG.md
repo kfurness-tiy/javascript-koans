@@ -114,4 +114,19 @@ Did okay on "about arrays" section. I won't lie, it is weird to only be looking 
 * It should use chain() ... .value() to use multiple higher order functions.
   * I definitely did not follow this test. I can see how using  .flatten().map(function(x) { return x+1 } ) would return 6, but I do not understand how the other methods (or higher order functions?) are utilized to return 6.
 
-* What are higher order functions? I started reading about them but quickly got confused. 
+* What are higher order functions? I started reading about them but quickly got confused.
+
+## About Objects ##
+* It should confirm that properties are case sensitive.
+  * DON'T FORGET that capitalization is critical!
+
+* It should confirm that when a function is attached to an object, 'this' refers to the object.
+  * Whoa! Date.getFullYear() returns the year (local time). So cool.
+
+* Considering 'in' keyword + should have the bomb.
+  * 'in': State a property you want to find in an object. If the named property is there, it will return true, if not, it will return false. For example: var example = 'cats' (property) in 'animals'(object);  return = true
+
+* It should know that properties can be added and deleted.
+  * delete: Can delete a property(key), just by putting delete [objectName.propertyName]
+
+## About Inheritance ##
